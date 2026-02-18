@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <title>魔术计算器</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <link rel="stylesheet" href="pencil-layout.css" />
+  </head>
+  <body>
+    <div class="calc-app">
+      <div class="calc-phone">
+        <!-- 顶部工具栏：左侧列表，右侧计算器图标 -->
+        <div class="calc-toolbar">
+          <div class="calc-toolbar-btn calc-toolbar-btn--list">≡</div>
+          <div class="calc-toolbar-spacer"></div>
+          <div class="calc-toolbar-btn">▦</div>
+        </div>
+
+        <!-- 显示区域：上历史，下结果 -->
+        <div class="calc-display">
+          <div class="calc-display-history">123 × 4</div>
+          <div class="calc-display-result">492</div>
+        </div>
+
+        <!-- 按键区域：严格对应 .pen 中 Keypad 的 5 行布局 -->
+        <div class="calc-keypad">
+          <!-- Row 1: Backspace, AC, Percent, Divide -->
+          <div class="calc-key-row">
+            <button class="calc-key calc-key--func">⌫</button>
+            <button class="calc-key calc-key--func">AC</button>
+            <button class="calc-key calc-key--func">%</button>
+            <button class="calc-key calc-key--op">÷</button>
+          </div>
+
+          <!-- Row 2: 7 8 9 × -->
+          <div class="calc-key-row">
+            <button class="calc-key">7</button>
+            <button class="calc-key">8</button>
+            <button class="calc-key">9</button>
+            <button class="calc-key calc-key--op">×</button>
+          </div>
+
+          <!-- Row 3: 4 5 6 − -->
+          <div class="calc-key-row">
+            <button class="calc-key">4</button>
+            <button class="calc-key">5</button>
+            <button class="calc-key">6</button>
+            <button class="calc-key calc-key--op">−</button>
+          </div>
+
+          <!-- Row 4: 1 2 3 + -->
+          <div class="calc-key-row">
+            <button class="calc-key">1</button>
+            <button class="calc-key">2</button>
+            <button class="calc-key">3</button>
+            <button class="calc-key calc-key--op">+</button>
+          </div>
+
+          <!-- Row 5: ± 0 . = -->
+          <div class="calc-key-row">
+            <button class="calc-key">±</button>
+            <button class="calc-key">0</button>
+            <button class="calc-key">.</button>
+            <button class="calc-key calc-key--op calc-key--equal">=</button>
+          </div>
+        </div>
+
+        <!-- 底部 Home Indicator -->
+        <div class="calc-home-indicator"></div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+  </html>
+
